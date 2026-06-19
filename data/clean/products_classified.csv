@@ -1,0 +1,166 @@
+name,calories,protein,fat,carbs,category
+"Hummus, commercial",229.0,7.35,17.1,14.9,fat
+"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",50.0,3.35,1.9,4.91,carb
+"Tomatoes, grape, raw",27.0,0.83,0.63,5.51,vegetable
+"Beans, snap, green, canned, regular pack, drained solids",21.0,1.04,0.39,4.11,vegetable
+"Broccoli, raw",32.0,2.57,0.34,6.29,vegetable
+"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",43.0,3.38,0.95,5.19,carb
+"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",34.0,3.43,0.08,4.89,vegetable
+"Milk, whole, 3.25% milkfat, with added vitamin D",60.0,3.28,3.2,4.67,fat
+"Frankfurter, beef, unheated",314.0,11.7,28.0,2.89,fat
+"Nuts, almonds, dry roasted, with salt added",620.0,20.4,57.8,16.2,fat
+"Cheese, ricotta, whole milk",157.0,7.81,11.0,6.86,fat
+"Kale, raw",35.0,2.92,1.49,4.42,carb
+"Egg, whole, raw, frozen, pasteurized",150.0,12.3,10.3,0.91,fat
+"Egg, white, raw, frozen, pasteurized",48.0,10.1,0.16,0.74,protein
+"Egg, white, dried",376.0,79.9,0.65,6.02,protein
+"Sauce, salsa, ready-to-serve",29.0,1.44,0.19,6.74,vegetable
+"Sausage, breakfast sausage, beef, pre-cooked, unprepared",328.0,13.3,28.7,3.37,fat
+"Onion rings, breaded, par fried, frozen, prepared, heated in oven",288.0,4.52,14.4,36.3,carb
+"Pickles, cucumber, dill or kosher dill",12.0,0.48,0.43,1.99,vegetable
+"Peanut butter, smooth style, with salt",597.0,22.5,51.1,22.3,fat
+"Cheese, parmesan, grated",421.0,29.6,28.0,12.4,fat
+"Cheese, pasteurized process, American, vitamin D fortified",366.0,18.0,30.6,5.27,fat
+"Grapefruit juice, white, canned or bottled, unsweetened",37.0,0.55,0.7,7.59,vegetable
+"Peaches, yellow, raw",42.0,0.91,0.27,10.1,vegetable
+"Seeds, sunflower seed kernels, dry roasted, with salt added",612.0,21.0,56.1,17.1,fat
+"Sausage, Italian, pork, mild, cooked, pan-fried",322.0,18.2,26.2,2.15,fat
+"Bread, white, commercially prepared",270.0,9.43,3.59,49.2,carb
+"Sausage, turkey, breakfast links, mild, raw",169.0,16.7,10.4,0.93,protein
+"Cheese, swiss",393.0,27.0,31.0,1.44,fat
+"Kale, frozen, cooked, boiled, drained, without salt",36.0,2.94,1.21,5.3,carb
+"Carrots, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",37.0,0.81,0.47,7.92,vegetable
+"Mustard, prepared, yellow",61.0,4.25,3.38,5.3,fat
+"Figs, dried, uncooked",249.0,3.3,0.92,63.9,carb
+"Kiwifruit, green, raw",58.0,1.06,0.44,14.0,carb
+"Melons, cantaloupe, raw",34.0,0.82,0.18,8.16,vegetable
+"Nectarines, raw",39.0,1.06,0.28,9.18,vegetable
+"Oranges, raw, navels (Includes foods for USDA's Food Distribution Program)",47.0,0.91,0.15,11.8,vegetable
+"Strawberries, raw",31.0,0.64,0.22,7.63,vegetable
+"Lettuce, cos or romaine, raw",17.0,1.24,0.26,3.24,vegetable
+"Cheese, cheddar",408.0,23.3,34.0,2.44,fat
+"Cheese, cottage, lowfat, 2% milkfat",84.0,11.0,2.3,4.31,protein
+"Cheese, mozzarella, low moisture, part-skim",298.0,23.7,20.4,4.44,fat
+"Egg, whole, dried",575.0,48.1,39.8,1.87,fat
+"Egg, yolk, raw, frozen, pasteurized",296.0,15.6,25.1,0.59,fat
+"Egg, yolk, dried",654.0,34.2,55.5,1.07,fat
+"Cheese, dry white, queso seco",326.0,24.5,24.3,2.07,fat
+"Yogurt, Greek, plain, nonfat",61.0,10.3,0.37,3.64,protein
+"Yogurt, Greek, strawberry, nonfat",83.0,8.06,0.15,12.2,protein
+"Oil, coconut",833.0,0.0,99.1,0.84,fat
+"Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",220.0,27.1,11.6,0.0,protein
+"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",156.0,23.9,5.95,0.0,protein
+"Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",166.0,32.1,3.24,0.0,protein
+"Sauce, pasta, spaghetti/marinara, ready-to-serve",45.0,1.41,1.48,8.05,vegetable
+"Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",106.0,16.7,3.73,0.27,protein
+"Pears, raw, bartlett (Includes foods for USDA's Food Distribution Program)",57.0,0.38,0.16,15.1,carb
+"Olives, green, Manzanilla, stuffed with pimiento",130.0,1.15,12.9,4.96,fat
+"Sausage, pork, chorizo, link or ground, cooked, pan-fried",346.0,19.3,28.1,2.63,fat
+"Cookies, oatmeal, soft, with raisins",430.0,5.79,14.3,69.6,carb
+"Tomatoes, canned, red, ripe, diced",18.0,0.84,0.5,3.32,vegetable
+"Fish, haddock, raw",74.0,16.3,0.45,0.0,protein
+"Fish, pollock, raw",56.0,12.3,0.41,0.0,protein
+"Fish, tuna, light, canned in water, drained solids",90.0,19.0,0.94,0.08,protein
+"Sugars, granulated",385.0,0.0,0.32,99.6,carb
+"Restaurant, Chinese, sweet and sour pork",260.0,8.88,13.6,25.5,fat
+"Restaurant, Chinese, fried rice, without meat",174.0,3.84,3.19,32.5,carb
+"Restaurant, Latino, tamale, pork",174.0,7.38,9.04,15.8,fat
+"Restaurant, Latino, pupusas con frijoles (pupusas, bean)",229.0,5.59,9.01,31.5,carb
+"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8"" fat, choice, raw",155.0,22.8,6.39,0.0,protein
+"Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0"" fat, select, cooked, roasted",176.0,27.7,6.36,0.0,protein
+"Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0"" fat, select, raw",122.0,23.4,2.48,0.0,protein
+"Beef, round, top round roast, boneless, separable lean only, trimmed to 0"" fat, select, raw",123.0,23.7,2.41,0.0,protein
+"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8"" fat, choice, cooked, grilled",219.0,27.3,11.4,0.0,protein
+"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8"" fat, select, raw",145.0,22.7,5.32,0.0,protein
+"Bread, whole-wheat, commercially prepared",254.0,12.3,3.55,43.1,carb
+"Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0"" fat, select, cooked, roasted",176.0,27.7,6.36,0.0,protein
+"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8"" fat, choice, raw",155.0,22.8,6.39,0.0,protein
+"Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0"" fat, select, raw",122.0,23.4,2.48,0.0,protein
+"Beef, round, top round roast, boneless, separable lean only, trimmed to 0"" fat, select, raw",123.0,23.7,2.41,0.0,protein
+"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8"" fat, select, raw",145.0,22.7,5.32,0.0,protein
+"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8"" fat, choice, cooked, grilled",219.0,27.3,11.4,0.0,protein
+"Carrots, frozen, unprepared",37.0,0.81,0.47,7.92,vegetable
+"Cheese, dry white, queso seco",326.0,24.5,24.3,2.07,fat
+"Cheese, ricotta, whole milk",157.0,7.81,11.0,6.86,fat
+"Cheese, swiss",393.0,27.0,31.0,1.44,fat
+"Figs, dried, uncooked",249.0,3.3,0.92,63.9,carb
+"Lettuce, cos or romaine, raw",17.0,1.24,0.26,3.24,vegetable
+"Melons, cantaloupe, raw",34.0,0.82,0.18,8.16,vegetable
+"Oranges, raw, navels",47.0,0.91,0.15,11.8,vegetable
+"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",43.0,3.38,0.95,5.18,carb
+"Pears, raw, bartlett",57.0,0.38,0.16,15.1,carb
+"Restaurant, Chinese, sweet and sour pork",260.0,8.88,13.6,25.5,fat
+"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",34.0,3.43,0.08,4.92,vegetable
+"Sauce, salsa, ready-to-serve",29.0,1.44,0.19,6.74,vegetable
+"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",50.0,3.36,1.9,4.9,carb
+"Sausage, breakfast sausage, beef, pre-cooked, unprepared",328.0,13.3,28.7,3.37,fat
+"Sausage, Italian, pork, mild, cooked, pan-fried",322.0,18.2,26.2,2.15,fat
+"Sausage, pork, chorizo, link or ground, cooked, pan-fried",346.0,19.3,28.1,2.63,fat
+"Milk, whole, 3.25% milkfat, with added vitamin D",60.0,3.27,3.2,4.63,fat
+"Sausage, turkey, breakfast links, mild, raw",169.0,16.7,10.4,0.93,protein
+"Sugars, granulated",385.0,0.0,0.32,99.6,carb
+"Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",220.0,27.1,11.6,0.0,protein
+"Ham, sliced, restaurant",121.0,19.6,3.68,2.36,protein
+"Cheese, American, restaurant",375.0,17.5,31.1,6.35,fat
+"Broccoli, raw",31.0,2.57,0.34,6.27,vegetable
+"Strawberries, raw",31.0,0.64,0.22,7.63,vegetable
+"Ketchup, restaurant",117.0,1.11,0.55,26.8,carb
+"Eggs, Grade A, Large, egg white",55.0,10.7,0.0,2.36,protein
+"Eggs, Grade A, Large, egg yolk",334.0,16.2,28.8,1.02,fat
+"Eggs, Grade A, Large, egg whole",148.0,12.4,9.96,0.96,fat
+"Pork, cured, bacon, cooked, restaurant",500.0,40.9,36.5,2.1,fat
+"Flour, wheat, all-purpose, enriched, bleached",366.0,10.9,1.48,77.3,carb
+"Flour, wheat, all-purpose, enriched, unbleached",358.0,13.1,1.48,73.2,carb
+"Flour, wheat, all-purpose, unenriched, unbleached",362.0,12.0,1.7,74.6,carb
+"Flour, whole wheat, unenriched",370.0,15.1,2.73,71.2,carb
+"Flour, bread, white, enriched, unbleached",363.0,14.3,1.65,72.8,carb
+"Flour, rice, white, unenriched",359.0,6.94,1.3,79.8,carb
+"Flour, corn, yellow, fine meal, enriched",364.0,6.2,1.74,80.8,carb
+"Onions, red, raw",44.0,0.94,0.1,9.93,vegetable
+"Onions, yellow, raw",38.0,0.83,0.05,8.61,vegetable
+"Bananas, overripe, raw",85.0,0.73,0.22,20.1,carb
+"Bananas, ripe and slightly ripe, raw",97.0,0.74,0.29,23.0,carb
+"Garlic, raw",143.0,6.62,0.38,28.2,carb
+"Flour, soy, defatted",366.0,51.1,3.33,32.9,protein
+"Flour, soy, full-fat",452.0,38.6,20.7,27.9,fat
+"Flour, rice, brown",365.25,7.19,3.85,75.5,carb
+"Flour, rice, glutinous",358.0,6.69,1.16,80.1,carb
+"Flour, pastry, unenriched, unbleached",358.0,8.75,1.64,77.2,carb
+"Onions, white, raw",35.0,0.89,0.13,7.68,vegetable
+"Bananas, overripe, raw",85.0,0.73,0.22,20.1,carb
+"Bananas, ripe and slightly ripe, raw",97.0,0.74,0.29,23.0,carb
+"Apples, red delicious, with skin, raw",62.0,0.19,0.21,14.8,carb
+"Apples, honeycrisp, with skin, raw",60.0,0.1,0.1,14.7,carb
+"Apples, granny smith, with skin, raw",59.0,0.27,0.14,14.2,carb
+"Apples, gala, with skin, raw",61.0,0.13,0.15,14.8,carb
+"Apples, fuji, with skin, raw",65.0,0.15,0.16,15.7,carb
+баранина,294.0,25.0,21.0,0.0,fat
+говядина,218.0,26.0,12.0,0.0,protein
+курица,165.0,31.0,3.6,0.0,protein
+конина,143.0,21.0,7.0,0.0,protein
+фарш говяжий,254.0,17.0,20.0,0.0,fat
+яйцо,155.0,13.0,11.0,1.1,fat
+молоко,61.0,3.2,3.3,4.8,fat
+творог,121.0,14.0,5.5,3.5,protein
+сметана,206.0,2.8,20.0,3.2,fat
+рис,344.0,6.7,0.7,78.0,carb
+гречка,343.0,13.0,3.4,71.0,carb
+макароны,350.0,12.0,1.1,71.0,carb
+картофель,77.0,2.0,0.1,17.0,carb
+морковь,41.0,0.9,0.2,9.6,vegetable
+лук,40.0,1.1,0.1,9.3,vegetable
+помидор,18.0,0.9,0.2,3.9,vegetable
+огурец,15.0,0.7,0.1,3.1,vegetable
+капуста,25.0,1.3,0.1,5.8,vegetable
+масло растительное,899.0,0.0,99.9,0.0,fat
+масло сливочное,748.0,0.5,82.5,0.8,fat
+мука,342.0,10.0,1.2,74.0,carb
+сахар,399.0,0.0,0.0,99.8,carb
+соль,0.0,0.0,0.0,0.0,other
+тыква,28.0,1.0,0.1,6.5,vegetable
+болгарский перец,31.0,1.0,0.3,6.7,vegetable
+чеснок,149.0,6.4,0.5,33.0,carb
+свёкла,43.0,1.6,0.2,9.6,vegetable
+томатная паста,82.0,4.8,0.5,15.0,carb
+кефир,40.0,3.4,1.0,4.7,carb
+сыр,402.0,25.0,33.0,1.3,fat

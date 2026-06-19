@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --milk: #FAF8F5;
+  --milk-dark: #F2EFE9;
+  --lavender: #9B8EC4;
+  --lavender-light: #D4CAFE;
+  --lavender-dark: #7B6BAA;
+  --lavender-soft: #E8E2F5;
+  --text-dark: #2D2640;
+  --text-mid: #6B6280;
+  --text-light: #9B93B0;
+  --white: #FFFFFF;
+  --success: #7BC67E;
+  --warning: #F0B429;
+  --card-shadow: 0 4px 24px rgba(139, 123, 184, 0.12);
+  --card-shadow-hover: 0 8px 40px rgba(139, 123, 184, 0.22);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--milk);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+input, select {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--milk-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lavender);
+  border-radius: 3px;
+}
