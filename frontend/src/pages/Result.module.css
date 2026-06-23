@@ -164,3 +164,157 @@
   font-size: 14px;
   font-weight: 500;
 }
+/* Навигация по неделям */
+.weekNav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.weekBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1.5px solid var(--lavender);
+  border-radius: 50px;
+  background: white;
+  color: var(--lavender-dark);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.weekBtn:hover:not(:disabled) { background: var(--lavender-soft); }
+.weekBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+.weekLabel {
+  font-size: 13px;
+  color: var(--text-mid);
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+}
+
+/* Клик на блюдо */
+.dishName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.dishName:hover { color: var(--lavender-dark); }
+.dishRecipeHint {
+  font-size: 12px;
+  color: var(--lavender);
+  font-weight: 400;
+}
+.altTag { cursor: pointer; }
+.altTag:hover { background: var(--lavender-light); }
+
+/* Модалка */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 38, 64, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modalCard {
+  background: white;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(45, 38, 64, 0.25);
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 28px 0;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid var(--milk-dark);
+  padding-bottom: 16px;
+}
+.modalTitle {
+  font-size: 20px;
+  color: var(--text-dark);
+  font-family: 'Playfair Display', serif;
+  flex: 1;
+  margin-right: 16px;
+}
+.modalClose {
+  background: var(--milk);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-mid);
+  flex-shrink: 0;
+}
+.modalClose:hover { background: var(--lavender-soft); color: var(--lavender-dark); }
+.modalBody { padding: 20px 28px 28px; }
+.modalLoading { padding: 40px; text-align: center; color: var(--text-mid); }
+.modalError { padding: 20px 28px; color: #C0392B; font-size: 14px; }
+.modalNutrition {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: var(--lavender-soft);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.modalNutrItem { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.modalNutrVal { font-size: 18px; font-weight: 700; color: var(--text-dark); }
+.modalNutrLabel { font-size: 11px; color: var(--text-light); }
+.modalSection { margin-bottom: 20px; }
+.modalSectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+.modalIngredients { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.modalIngredientItem { font-size: 14px; color: var(--text-mid); }
+.modalSteps { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.modalStep {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.modalStepNum {
+  min-width: 24px;
+  height: 24px;
+  background: var(--lavender-dark);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.modalNoRecipe {
+  font-size: 14px;
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px 0;
+}

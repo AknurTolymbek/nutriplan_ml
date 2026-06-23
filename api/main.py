@@ -308,6 +308,25 @@ def generate_meal_plan(profile: UserProfile):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/recipe/{dish_name}")
+def get_recipe(dish_name: str):
+    df = kazakh_recipes
+    match = df[df["name"].str.lower() == dish_name.lower()]
+    if len(match) == 0:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+    row = match.iloc[0]
+    result = {
+        "name": row["name"],
+        "calories": round(float(row.get("calories", 0))),
+        "protein": round(float(row.get("protein", 0))),
+        "fat": round(float(row.get("fat", 0))),
+        "carbs": round(float(row.get("carbs", 0))),
+        "minutes": int(row.get("minutes", 0)),
+    }
+    for field in ["steps", "ingredients", "description", "tags"]:
+        if field in row.index and pd.notna(row[field]):
+            result[field] = str(row[field])
+    return result
 
 @app.get("/activities")
 def get_activities():

@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Landing.module.css'
+import { useRef } from 'react'
 import { ClipboardList, Brain, CalendarDays, Coffee, Apple, UtensilsCrossed, ChefHat, Leaf } from 'lucide-react'
 
 export default function Landing() {
   const navigate = useNavigate()
+    const howRef = useRef(null)
 
   return (
     <div className={styles.page}>
@@ -35,8 +37,8 @@ export default function Landing() {
             <button className={styles.btnPrimary} onClick={() => navigate('/form')}>
               Создать мой план
             </button>
-            <button className={styles.btnSecondary}>
-              Узнать больше ↓
+            <button className={styles.btnSecondary} onClick={() => howRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+             Узнать больше ↓
             </button>
           </div>
           <div className={styles.stats}>
@@ -89,7 +91,7 @@ export default function Landing() {
       </section>
 
       {/* Как это работает */}
-      <section className={styles.howSection}>
+      <section className={styles.howSection} ref={howRef}>
         <h2 className={styles.sectionTitle}>Как это работает</h2>
         <p className={styles.sectionDesc}>Три простых шага до персонального плана питания</p>
 
