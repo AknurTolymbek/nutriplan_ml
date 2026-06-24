@@ -60,7 +60,7 @@ export default function Form() {
       localStorage.setItem('nutritionPlan', JSON.stringify(response.data))
       navigate('/result')
     } catch (err) {
-      setError('Ошибка при генерации плана. Проверь что бэк запущен.')
+      setError('Ошибка при генерации плана. Проверьте что бэк запущен.')
     } finally {
       setLoading(false)
     }
