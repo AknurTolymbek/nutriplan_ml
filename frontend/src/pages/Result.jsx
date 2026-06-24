@@ -20,7 +20,7 @@ function RecipeModal({ dishName, onClose }) {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/recipe/${encodeURIComponent(dishName)}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/recipe/${encodeURIComponent(dishName)}`)
       .then(r => { setRecipe(r.data); setLoading(false) })
       .catch(() => { setError('Рецепт не найден в базе'); setLoading(false) })
   }, [dishName])

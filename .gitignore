@@ -25,3 +25,4 @@ data/raw/*.zip
 
 
 node_modules/
+!data/raw/kazakh_recipes.csv
