@@ -3,5 +3,3 @@ uvicorn
 pandas
 numpy
 scikit-learn
-
-
