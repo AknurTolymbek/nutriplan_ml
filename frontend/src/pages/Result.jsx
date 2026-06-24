@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import styles from './Result.module.css'
-import { Sunrise, Coffee, Apple, UtensilsCrossed, ChefHat, Moon, BedDouble, Leaf, CalendarDays, BarChart2, X, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Sunrise, Coffee, Apple, UtensilsCrossed, ChefHat, Moon, BedDouble, Leaf, CalendarDays, BarChart2, X, Clock } from 'lucide-react'
 
 const MEAL_ICONS = {
   'Подъём':         <Sunrise size={20} color="#8B7BB8" />,
@@ -25,7 +25,6 @@ function RecipeModal({ dishName, onClose }) {
       .catch(() => { setError('Рецепт не найден в базе'); setLoading(false) })
   }, [dishName])
 
-  // Парсим steps если это строка вида "['шаг1', 'шаг2']"
   const parseSteps = (raw) => {
     try {
       const cleaned = raw.replace(/'/g, '"')
@@ -59,7 +58,6 @@ function RecipeModal({ dishName, onClose }) {
 
         {recipe && (
           <div className={styles.modalBody}>
-            {/* КБЖУ */}
             <div className={styles.modalNutrition}>
               <div className={styles.modalNutrItem}>
                 <span className={styles.modalNutrVal}>{recipe.calories}</span>
@@ -83,7 +81,6 @@ function RecipeModal({ dishName, onClose }) {
               </div>
             </div>
 
-            {/* Ингредиенты */}
             {recipe.ingredients && (
               <div className={styles.modalSection}>
                 <h3 className={styles.modalSectionTitle}>Ингредиенты</h3>
@@ -95,7 +92,6 @@ function RecipeModal({ dishName, onClose }) {
               </div>
             )}
 
-            {/* Шаги */}
             {recipe.steps && (
               <div className={styles.modalSection}>
                 <h3 className={styles.modalSectionTitle}>Приготовление</h3>
@@ -126,8 +122,8 @@ export default function Result() {
   const navigate = useNavigate()
   const [data, setData] = useState(null)
   const [activeDay, setActiveDay] = useState(1)
-  const [weekOffset, setWeekOffset] = useState(0) // какая неделя показана
-  const [selectedDish, setSelectedDish] = useState(null) // для модалки
+  const [weekOffset, setWeekOffset] = useState(0)
+  const [selectedDish, setSelectedDish] = useState(null)
 
   useEffect(() => {
     const saved = localStorage.getItem('nutritionPlan')
@@ -142,12 +138,10 @@ export default function Result() {
   const daysPerPage = 7
   const totalWeeks = Math.ceil(totalDays / daysPerPage)
 
-  // Дни текущей недели
   const weekStart = weekOffset * daysPerPage
   const weekEnd = Math.min(weekStart + daysPerPage, totalDays)
   const visibleDays = plan.slice(weekStart, weekEnd)
 
-  // При смене недели переключаем на первый день этой недели
   const goToWeek = (offset) => {
     setWeekOffset(offset)
     setActiveDay(offset * daysPerPage + 1)
@@ -163,18 +157,16 @@ export default function Result() {
         <RecipeModal dishName={selectedDish} onClose={() => setSelectedDish(null)} />
       )}
 
-      {/* Хедер */}
       <div className={styles.header}>
         <button className={styles.back} onClick={() => navigate('/form')}>← Изменить параметры</button>
         <div className={styles.logo} style={{display:'flex', alignItems:'center', gap:'8px'}}>
-         <Leaf size={18} color="#7B6BAA" /> NutriPlan
+          <Leaf size={18} color="#7B6BAA" /> NutriPlan
         </div>
         <button className={styles.newPlan} onClick={() => navigate('/')}>На главную</button>
       </div>
 
       <div className={styles.container}>
 
-        {/* КБЖУ карточка */}
         <div className={styles.kbzhuCard}>
           <div className={styles.kbzhuLeft}>
             <div className={styles.kbzhuBadge}>✦ Твоя суточная норма</div>
@@ -205,30 +197,18 @@ export default function Result() {
           </div>
         </div>
 
-        {/* Навигация по дням с пагинацией по неделям */}
+        {/* Навигация по дням */}
         <div className={styles.daysNav}>
-          {totalWeeks > 1 && (
-            <div className={styles.weekNav}>
-              <button
-                className={styles.weekBtn}
-                onClick={() => goToWeek(weekOffset - 1)}
-                disabled={weekOffset === 0}
-              >
-                <ChevronLeft size={16} /> Пред. неделя
-              </button>
-              <span className={styles.weekLabel}>
-                Неделя {weekOffset + 1} из {totalWeeks} · Дни {weekStart + 1}–{weekEnd}
-              </span>
-              <button
-                className={styles.weekBtn}
-                onClick={() => goToWeek(weekOffset + 1)}
-                disabled={weekOffset === totalWeeks - 1}
-              >
-                След. неделя <ChevronRight size={16} />
-              </button>
-            </div>
-          )}
           <div className={styles.daysScroll}>
+            {/* Кнопка "← Назад" если не первая неделя */}
+            {weekOffset > 0 && (
+              <button className={styles.dayBtnPrev} onClick={() => goToWeek(weekOffset - 1)}>
+                <span className={styles.dayNum}>← Назад</span>
+                <span className={styles.dayCal}>Дни {weekStart - daysPerPage + 1}–{weekStart}</span>
+              </button>
+            )}
+
+            {/* Кнопки дней текущей недели */}
             {visibleDays.map(d => (
               <button
                 key={d.day}
@@ -239,6 +219,14 @@ export default function Result() {
                 <span className={styles.dayCal}>{d.daily_summary?.eaten_calories} ккал</span>
               </button>
             ))}
+
+            {/* Кнопка "Следующие →" если есть ещё недели */}
+            {weekOffset < totalWeeks - 1 && (
+              <button className={styles.dayBtnNext} onClick={() => goToWeek(weekOffset + 1)}>
+                <span className={styles.dayNum}>Дни {weekEnd + 1}–{Math.min(weekEnd + daysPerPage, totalDays)}</span>
+                <span className={styles.dayCal}>Следующие →</span>
+              </button>
+            )}
           </div>
         </div>
 
@@ -268,7 +256,7 @@ export default function Result() {
                       <div
                         className={styles.dishName}
                         onClick={() => setSelectedDish(slot.dish)}
-                        title="Нажмите чтобы увидеть рецепт"
+                        title="Нажми чтобы увидеть рецепт"
                       >
                         {slot.dish} <span className={styles.dishRecipeHint}>→ рецепт</span>
                       </div>
@@ -286,7 +274,7 @@ export default function Result() {
                               key={j}
                               className={styles.altTag}
                               onClick={() => setSelectedDish(alt)}
-                              title="Нажмите чтобы увидеть рецепт"
+                              title="Нажми чтобы увидеть рецепт"
                             >
                               {alt}
                             </span>

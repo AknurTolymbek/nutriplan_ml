@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Form from './pages/Form'
-import Result from './pages/Result'
+import Result from './pages/Result.jsx'
 import './index.css'
 
 export default function App() {
