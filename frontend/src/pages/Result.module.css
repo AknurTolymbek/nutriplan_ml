@@ -351,3 +351,247 @@
   font-weight: 400;
 }
 .dayBtnPrev:hover { border-color: var(--lavender); background: var(--lavender-soft); color: var(--lavender-dark); }
+
+@media (max-width: 900px) {
+  .header {
+    padding: 16px 28px;
+  }
+
+  .container {
+    padding: 36px 28px 64px;
+  }
+
+  .kbzhuCard {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .kbzhuRight {
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 14px 18px;
+  }
+
+  .logo {
+    justify-self: end;
+    font-size: 16px;
+  }
+
+  .back,
+  .newPlan {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .newPlan {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .container {
+    padding: 28px 18px 54px;
+  }
+
+  .kbzhuCard {
+    border-radius: 20px;
+    padding: 26px 20px;
+    margin-bottom: 24px;
+  }
+
+  .kbzhuBadge {
+    font-size: 11px;
+  }
+
+  .kbzhuMain {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .kbzhuCal {
+    font-size: 44px;
+    line-height: 1;
+  }
+
+  .kbzhuCalLabel {
+    font-size: 15px;
+  }
+
+  .goalNote {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  .goalSub {
+    flex-basis: 100%;
+  }
+
+  .kbzhuRight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .kbzhuItem {
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(184, 169, 217, 0.14);
+    border-radius: 14px;
+    padding: 12px 8px;
+  }
+
+  .kbzhuItemVal {
+    font-size: 24px;
+  }
+
+  .kbzhuUnit {
+    font-size: 13px;
+  }
+
+  .dayBtn,
+  .dayBtnNext,
+  .dayBtnPrev {
+    min-width: 92px;
+    padding: 10px 14px;
+  }
+
+  .mealCard {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    border-radius: 16px;
+    padding: 18px;
+  }
+
+  .mealLeft {
+    min-width: 0;
+  }
+
+  .mealCenter {
+    grid-column: 1 / -1;
+    order: 3;
+    min-width: 0;
+  }
+
+  .mealRight {
+    min-width: 70px;
+    align-self: start;
+  }
+
+  .dishName {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .dishRecipeHint {
+    display: inline-block;
+  }
+
+  .dividerRow {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .dividerIcon {
+    width: 26px;
+  }
+
+  .summaryCard {
+    border-radius: 16px;
+    padding: 20px 18px;
+  }
+
+  .summaryTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .summaryRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .summaryDivider {
+    display: none;
+  }
+
+  .summaryItem {
+    background: var(--milk);
+    border-radius: 12px;
+    padding: 12px 8px;
+  }
+
+  .summaryVal {
+    font-size: 22px;
+  }
+
+  .advice {
+    font-size: 13px;
+  }
+
+  .modalOverlay {
+    align-items: flex-end;
+    padding: 12px;
+  }
+
+  .modalCard {
+    max-height: 88vh;
+    border-radius: 20px;
+  }
+
+  .modalHeader {
+    padding: 22px 18px 14px;
+  }
+
+  .modalTitle {
+    font-size: 18px;
+  }
+
+  .modalBody {
+    padding: 18px;
+  }
+
+  .modalNutrition {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .kbzhuRight,
+  .summaryRow {
+    grid-template-columns: 1fr;
+  }
+
+  .mealCard {
+    grid-template-columns: 1fr;
+  }
+
+  .mealRight {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 8px;
+  }
+
+  .mealMacros {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

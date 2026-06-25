@@ -28,6 +28,7 @@ body {
   background-color: var(--milk);
   color: var(--text-dark);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -41,6 +42,7 @@ button {
 
 input, select {
   font-family: 'Inter', sans-serif;
+  min-width: 0;
 }
 
 /* Scrollbar */

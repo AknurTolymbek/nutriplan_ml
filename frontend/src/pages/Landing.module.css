@@ -217,3 +217,184 @@
   color: var(--text-light);
   border-top: 1px solid rgba(184, 169, 217, 0.15);
 }
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 16px 28px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 56px 28px 72px;
+  }
+
+  .heroLeft {
+    text-align: center;
+  }
+
+  .heroDesc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroBtns,
+  .stats {
+    justify-content: center;
+  }
+
+  .heroRight {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .howSection {
+    padding: 64px 28px;
+  }
+
+  .cta {
+    padding: 48px 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    padding: 14px 18px;
+  }
+
+  .logoText {
+    font-size: 18px;
+  }
+
+  .navBtn {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .hero {
+    gap: 30px;
+    padding: 40px 18px 56px;
+  }
+
+  .badge {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .heroTitle {
+    font-size: 38px;
+    line-height: 1.12;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 26px;
+  }
+
+  .heroBtns {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    padding: 13px 18px;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .stat {
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(184, 169, 217, 0.16);
+    border-radius: 14px;
+    padding: 10px 8px;
+  }
+
+  .statNum {
+    font-size: 21px;
+  }
+
+  .statLabel {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .statDivider,
+  .blob1,
+  .blob2 {
+    display: none;
+  }
+
+  .heroCard {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .heroCardHeader {
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .mealIcon {
+    width: 30px;
+    flex-shrink: 0;
+  }
+
+  .mealDish {
+    font-size: 13px;
+  }
+
+  .mealKcal {
+    flex-shrink: 0;
+  }
+
+  .howSection {
+    padding: 54px 18px;
+  }
+
+  .sectionTitle,
+  .ctaTitle {
+    font-size: 31px;
+  }
+
+  .sectionDesc {
+    margin-bottom: 34px;
+  }
+
+  .stepCard {
+    border-radius: 18px;
+    padding: 28px 22px;
+  }
+
+  .cta {
+    padding: 36px 18px 44px;
+    margin-bottom: 20px;
+  }
+
+  .ctaInner {
+    border-radius: 20px;
+    padding: 38px 20px;
+  }
+
+  .footer {
+    padding: 22px 18px;
+    line-height: 1.4;
+  }
+}
