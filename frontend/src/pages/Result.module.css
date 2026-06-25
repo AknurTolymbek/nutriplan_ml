@@ -376,35 +376,46 @@
 @media (max-width: 640px) {
   .header {
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
     padding: 14px 18px;
   }
 
   .logo {
-    justify-self: end;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
     font-size: 16px;
+    margin-bottom: 2px;
   }
 
   .back,
   .newPlan {
-    padding: 8px 12px;
+    min-height: 40px;
+    padding: 8px 10px;
     font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .back {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .newPlan {
-    grid-column: 1 / -1;
-    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .container {
-    padding: 28px 18px 54px;
+    padding: 24px 16px 52px;
   }
 
   .kbzhuCard {
     border-radius: 20px;
-    padding: 26px 20px;
-    margin-bottom: 24px;
+    padding: 22px 18px;
+    margin-bottom: 22px;
   }
 
   .kbzhuBadge {
@@ -418,7 +429,7 @@
   }
 
   .kbzhuCal {
-    font-size: 44px;
+    font-size: 40px;
     line-height: 1;
   }
 
@@ -447,11 +458,11 @@
     background: rgba(255, 255, 255, 0.68);
     border: 1px solid rgba(184, 169, 217, 0.14);
     border-radius: 14px;
-    padding: 12px 8px;
+    padding: 10px 6px;
   }
 
   .kbzhuItemVal {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .kbzhuUnit {
@@ -461,16 +472,24 @@
   .dayBtn,
   .dayBtnNext,
   .dayBtnPrev {
-    min-width: 92px;
-    padding: 10px 14px;
+    min-width: 82px;
+    padding: 9px 12px;
+  }
+
+  .dayNum {
+    font-size: 12px;
+  }
+
+  .dayCal {
+    font-size: 10px;
   }
 
   .mealCard {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 12px;
-    border-radius: 16px;
-    padding: 18px;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 15px 16px;
   }
 
   .mealLeft {
@@ -484,13 +503,33 @@
   }
 
   .mealRight {
-    min-width: 70px;
+    min-width: 58px;
     align-self: start;
   }
 
+  .mealCal {
+    font-size: 21px;
+  }
+
+  .mealCalLabel {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .mealMacros {
+    font-size: 10px;
+  }
+
   .dishName {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.35;
+    margin-bottom: 5px;
+  }
+
+  .dishMeta {
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 
   .dishRecipeHint {
@@ -499,7 +538,8 @@
 
   .dividerRow {
     gap: 8px;
-    font-size: 13px;
+    font-size: 12px;
+    padding: 8px 0;
   }
 
   .dividerIcon {
@@ -508,7 +548,7 @@
 
   .summaryCard {
     border-radius: 16px;
-    padding: 20px 18px;
+    padding: 18px 16px;
   }
 
   .summaryTitle {
@@ -530,11 +570,11 @@
   .summaryItem {
     background: var(--milk);
     border-radius: 12px;
-    padding: 12px 8px;
+    padding: 10px 7px;
   }
 
   .summaryVal {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .advice {
@@ -574,24 +614,27 @@
 @media (max-width: 390px) {
   .kbzhuRight,
   .summaryRow {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .mealCard {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   .mealRight {
-    text-align: left;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 2px 8px;
+    text-align: right;
+    display: block;
   }
 
   .mealMacros {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .back,
+  .newPlan {
+    font-size: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
