@@ -152,7 +152,7 @@ def recommend_dish(target_cal, target_prot, target_fat, target_carbs,
         rec_cal       = round(row["calories"])
         original_name = row["name"]
 
-        if rec_cal > 0 and rec_cal < target_cal * 0.7:
+        if rec_cal > 0 and rec_cal < target_cal * 0.85:
             portions = round(target_cal / rec_cal, 1)
             portion_note = f"рекомендуем {portions} порции = {round(rec_cal * portions)} ккал"
         else:
@@ -182,13 +182,16 @@ def build_schedule(wake_time: str, sleep_time: str, kbzhu: dict) -> list:
     # Правильный расчёт сна через полночь
     sleep_hours = 24 - sleep_h + wake_h if sleep_h > wake_h else wake_h - sleep_h
 
+    # Исправление: если сон после полуночи — переводим в 24-часовой цикл
+    sleep_h_adjusted = sleep_h + 24 if sleep_h < wake_h else sleep_h
+
+    dinner_h     = min(sleep_h_adjusted - 5, 18) % 24
+    late_snack_h = min(sleep_h_adjusted - 3, 20) % 24
+
     cal  = kbzhu["calories"]
     prot = kbzhu["protein"]
     fat  = kbzhu["fat"]
     carb = kbzhu["carbs"]
-
-    dinner_h     = min(sleep_h - 5, 18)
-    late_snack_h = min(sleep_h - 3, 20)
 
     return [
         {"приём": "Подъём",         "время": f"{wake_h:02d}:00",       "is_meal": False, "действие": "Выпить стакан воды"},
@@ -270,13 +273,23 @@ def generate_plan(profile: UserProfile) -> dict:
                     "alternatives": [d["name"] for d in alternatives]
                 })
 
-        # Итог дня — сколько калорий набрали и сколько не хватает
-        deficit = kbzhu["calories"] - day_calories
+        # Итог дня
+        deficit    = kbzhu["calories"] - day_calories
+        is_deficit = deficit > 0
+
+        if is_deficit and deficit > 300:
+            advice = f"Увеличь порцию обеда в 1.5 раза чтобы добрать {deficit} ккал"
+        elif not is_deficit:
+            advice = f"Сегодня профицит {abs(deficit)} ккал — можно немного уменьшить порции"
+        else:
+            advice = ""
+
         day_plan["daily_summary"] = {
             "eaten_calories":  day_calories,
             "target_calories": kbzhu["calories"],
-            "deficit":         deficit,
-            "advice": f"Увеличь порцию обеда в 1.5 раза чтобы добрать {deficit} ккал" if deficit > 300 else ""
+            "deficit":         abs(deficit),
+            "is_deficit":      is_deficit,
+            "advice":          advice
         }
 
         plan.append(day_plan)

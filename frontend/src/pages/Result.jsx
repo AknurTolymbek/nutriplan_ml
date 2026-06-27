@@ -312,8 +312,12 @@ export default function Result() {
                 </div>
                 <div className={styles.summaryDivider} />
                 <div className={styles.summaryItem}>
-                  <span className={`${styles.summaryVal} ${styles.deficit}`}>-{summary.deficit}</span>
-                  <span className={styles.summaryLabel}>Дефицит</span>
+                  <span className={`${styles.summaryVal} ${styles.deficit}`}>
+                    {summary.is_deficit ? `-${summary.deficit}` : `+${summary.deficit}`}
+                  </span>
+                  <span className={styles.summaryLabel}>
+                    {summary.is_deficit ? 'Дефицит' : 'Профицит'}
+                  </span>
                 </div>
               </div>
               {summary.advice && (
