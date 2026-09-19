@@ -16,12 +16,17 @@
 **Backend**
 - Python, FastAPI, Uvicorn
 - Pandas, NumPy
-- scikit-learn (MinMaxScaler, cosine similarity)
+- scikit-learn
 
 **Frontend**
 - React 19 + Vite
 - React Router 7
 - ESLint
+
+**Machine Learning**
+- **Random Forest Regressor** — предсказание суточных КБЖУ (калории, белки, жиры, углеводы) по профилю пользователя. Обучена на 10 000 синтетических профилей (100 деревьев, max_depth=10). Метрики: R² ≈ 0.97–0.98 по калориям и жирам, ≈ 0.965 по белкам и углеводам
+- **Классификатор продуктов** — сравнение Logistic Regression и KNN (k=5) для категоризации продуктов (белок/углевод/жир/овощ); лучшая модель — KNN, accuracy ≈ 0.92
+- **Рекомендатель блюд** — content-based подход на косинусном сходстве (cosine similarity) между вектором целевых КБЖУ и параметрами блюд, с нормализацией признаков (MinMaxScaler / StandardScaler)
 
 **Данные**
 - `kazakh_recipes.csv` — 142 рецепта казахской кухни
@@ -87,3 +92,6 @@ npm run dev
 }
 ```
 
+## Авторы
+
+Проект разработан в рамках учебного/пет-проекта.
